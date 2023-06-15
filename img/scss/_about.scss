@@ -1,0 +1,76 @@
+/*PAGE ABOUT*/
+main {
+    section {
+        div {
+            .video {
+                display: flex;
+                justify-content: center;
+                video {
+                    align-items: center;
+                    width: 850px;
+                    height: 500px;
+                }
+            }
+            .about-content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .about-img {
+                    padding: 10px;
+                    position: relative;
+                    img {
+                        width: 250px;
+                        height: 350px;
+                    }
+                    .contenido-hover{
+                        width: 100%;
+                        height: 100%;
+                        top: 0px;
+                        left: 0px;
+                        position: absolute;
+                        background-color: $color-img-hover;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: 0.5s;
+                        h2{
+                            font-size: 30px;
+                            color: $color-hover-link;
+                        }
+                        p {
+                            font-size: 18px;
+                            color: $color-hover-link;
+                        }
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        section {
+            div {
+                .video {
+                    width: 380px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    video {
+                        width: 550px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

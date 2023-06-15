@@ -1,0 +1,63 @@
+/*Footer*/
+footer {
+    background-color: $color-bg-1;
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        .social-title {
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 30px;
+            padding: 20px 10px 5px 10px;
+            color: $color-subtitulos;
+            h3 {
+                font-family: $fuente-2;
+            }
+            p {
+                font-size: 1rem;
+                color: $color-basic;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+            li {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+                margin: 0px 10px;
+                list-style-type: none;
+                &:hover {
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+    .autor {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 15px;
+        strong {
+            font-family: $fuente-2;
+        }
+        p {
+            padding: 0px;
+            margin: 0px;
+        }
+        p:nth-child(2){
+            color: $color-autor;
+            font-size: 1rem;
+            padding-bottom: 10px;
+            &:nth-child(2):hover {
+                letter-spacing: 2px;
+                transition: .4s linear;
+            }
+        }
+    }
+}

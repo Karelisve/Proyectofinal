@@ -1,0 +1,506 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Barra de Navegación*/
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+header .navbar .logo {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+header .navbar .logo .navbar-brand {
+  margin-right: auto;
+}
+header .navbar .logo img {
+  width: 100px;
+  height: 50px;
+  margin-right: 30px;
+}
+header .navbar .navbar-nav {
+  margin-left: auto;
+  justify-content: end;
+}
+header .navbar .navbar-nav li a {
+  text-decoration: none;
+  color: rgb(43, 64, 51);
+  margin: 10px 20px 20px;
+  padding: 5px;
+}
+header .navbar .navbar-nav li a:hover {
+  color: rgb(54, 3, 28);
+  box-shadow: 3px 8px 22px rgba(177, 123, 145, 0.5);
+  border-radius: 10px;
+  background-color: rgb(217, 179, 196);
+}
+
+/*Footer*/
+footer {
+  background-color: rgba(86, 148, 110, 0.2);
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+footer .social .social-title {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding: 20px 10px 5px 10px;
+  color: rgb(43, 64, 51);
+}
+footer .social .social-title h3 {
+  font-family: "Roboto Slab", serif;
+}
+footer .social .social-title p {
+  font-size: 1rem;
+  color: rgb(16, 16, 16);
+}
+footer .social ul {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+footer .social ul li {
+  margin: 0px 10px;
+  list-style-type: none;
+}
+footer .social ul li img {
+  width: 20px;
+  height: 20px;
+}
+footer .social ul li:hover {
+  transform: translateY(-2px);
+}
+footer .autor {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+footer .autor strong {
+  font-family: "Roboto Slab", serif;
+}
+footer .autor p {
+  padding: 0px;
+  margin: 0px;
+}
+footer .autor p:nth-child(2) {
+  color: rgb(131, 24, 68);
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+footer .autor p:nth-child(2):nth-child(2):hover {
+  letter-spacing: 2px;
+  transition: 0.4s linear;
+}
+
+main section .page-title {
+  text-align: center;
+  padding-top: 10px;
+  letter-spacing: 2px;
+  color: rgb(62, 92, 73);
+  background-color: rgba(86, 148, 110, 0.2);
+}
+main section .page-title h1 {
+  font-family: "Roboto Slab", serif;
+}
+main section .page-title p {
+  color: rgb(16, 16, 16);
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  main section .page-title {
+    font-size: 14px;
+  }
+  main section .page-title p {
+    font-size: 13px;
+  }
+}
+/*INDEX MAIN*/
+/*banner*/
+main .banner {
+  background-image: url(../img/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  padding: 80px 40px;
+}
+main .banner div div .titulo-banner {
+  margin-bottom: 10px;
+  font-size: 5rem;
+  font-weight: 30px;
+  letter-spacing: 10px;
+  color: rgb(62, 92, 73);
+  font-family: "Roboto Slab", serif;
+}
+main .banner div div .parrafo-banner {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 0;
+  margin: 0px;
+  padding-left: 10px;
+  margin-left: 15px;
+  color: rgb(43, 64, 51);
+}
+main .banner div .banner-1 a {
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 64, 51);
+}
+main .banner div .banner-1 a:hover {
+  color: rgb(54, 3, 28);
+  box-shadow: 3px 8px 22px rgba(177, 123, 145, 0.5);
+  background-color: rgb(217, 179, 196);
+}
+main .banner div .banner-1 .banner-1:nth-child(2) {
+  margin-bottom: 10px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  main .banner div div .titulo-banner {
+    font-size: 3rem;
+    margin-left: 15px;
+  }
+  main .banner div div .parrafo-banner {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 15px;
+  }
+  main .banner div .banner-1 {
+    width: 700px;
+    height: 34px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner-link {
+    font-size: 0.8rem;
+  }
+}
+/*INDEX MAIN SECTION INFO */
+main section .info {
+  background-color: rgba(86, 148, 110, 0.2);
+  color: rgb(62, 92, 73);
+  padding: 20px 80px;
+  text-align: center;
+}
+main section .info div h2 {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+}
+main section .info div p {
+  margin-top: 10px;
+  color: rgb(16, 16, 16);
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  main section .info div h2 {
+    font-size: 15px;
+  }
+  main section .info div p {
+    font-size: 13px;
+  }
+}
+/*CARDS PRODUCTOS*/
+main section div .cards-title {
+  text-align: center;
+  font-size: 10px;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  color: rgb(62, 92, 73);
+}
+main section div .cards-title h2 {
+  font-family: "Roboto Slab", serif;
+}
+main section div .cards {
+  margin-top: 20px;
+  background-color: rgba(86, 148, 110, 0.2);
+}
+main section div .cards img {
+  width: 295px;
+  height: 350px;
+}
+main section div .cards h2 {
+  font-size: 18px;
+  margin: 0px;
+}
+main section div .cards p {
+  padding: 0px;
+  margin: 0px;
+}
+main section div .cards button {
+  margin: 10px;
+  padding: 2px 20px;
+  border-radius: 6px;
+  color: rgb(16, 16, 16);
+  background-color: rgb(255, 255, 255);
+}
+main section div .cards button:hover {
+  background-color: rgb(217, 179, 196);
+  color: rgb(54, 3, 28);
+}
+main section div .cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(6, 2, 4, 0.3);
+}
+main section div .card-link {
+  margin: 30px 0px;
+  text-align: center;
+}
+main section div .card-link a {
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 16, 16);
+  box-shadow: 3px 8px 22px rgba(177, 123, 145, 0.5);
+}
+main section div .card-link a:hover {
+  color: rgb(54, 3, 28);
+  box-shadow: 3px 8px 22px rgba(177, 123, 145, 0.5);
+  background-color: rgb(217, 179, 196);
+}
+
+/*Pagina Productos*/
+main section div .product-title {
+  font-size: 1.5rem;
+  color: rgb(62, 92, 73);
+  padding: 30px 5px;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+main section div .product-title h2 {
+  font-family: "Roboto Slab", serif;
+}
+main section div .product-title p:last-child {
+  font-size: 1rem;
+  padding: 0px;
+  color: rgb(16, 16, 16);
+}
+
+@media screen and (max-width: 990px) {
+  main section div .product-title {
+    font-size: 15px;
+  }
+  main section div .product-title p:last-child {
+    font-size: 14px;
+  }
+}
+/*FORMULARIO CONTACTO*/
+main section div .form {
+  margin: 30px 0px 30px 0px;
+  box-shadow: 0px 0px 20px rgba(6, 2, 4, 0.3);
+  border-radius: 8px;
+  padding: 30px 20px;
+  background-color: rgba(86, 148, 110, 0.2);
+}
+main section div .form .inputs {
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
+main section div .form .inputs label {
+  margin: 10px 10px 10px;
+  color: rgb(62, 92, 73);
+  font-size: 15px;
+}
+main section div .form .input-button {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+main section div .form .input-button button {
+  margin: 5px;
+  padding: 10px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(62, 92, 73);
+}
+main section div .form .input-button button:hover {
+  color: rgb(54, 3, 28);
+  box-shadow: 3px 8px 22px rgba(177, 123, 145, 0.5);
+  background-color: rgb(217, 179, 196);
+}
+main section div .contact-details {
+  margin: 30px 10px;
+}
+main section div .contact-details h2 {
+  font-family: "Roboto Slab", serif;
+  background-color: rgba(86, 148, 110, 0.2);
+  color: rgb(16, 16, 16);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+main section div .contact-details .details-1 {
+  color: rgb(16, 16, 16);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+main section div .contact-details .details-1 img {
+  width: 30px;
+  height: 30px;
+}
+main section div .contact-details .details-1 p {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(86, 148, 110, 0.2);
+  border-radius: 8px;
+}
+main section div .contact-details .iframe-map {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/*PAGE CARE*/
+main section article {
+  padding: 10px;
+}
+main section article .imagen-cuidado {
+  margin-top: 50px;
+  width: 290px;
+  height: 410px;
+  background-color: rgba(177, 123, 145, 0.5);
+}
+main section article .imagen-cuidado img {
+  width: 270px;
+  height: 390px;
+  margin-top: 10px;
+}
+main section article .parrafo-cuidado {
+  text-indent: 30px;
+  text-transform: initial;
+  margin-top: 20px;
+  padding: 20px 30px;
+}
+main section article .parrafo-cuidado h2 {
+  text-indent: 0%;
+  text-align: center;
+  color: rgb(62, 92, 73);
+}
+
+@media screen and (max-width: 768px) {
+  main section article .parrafo-cuidado {
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px;
+    width: 550px;
+  }
+  main section article .parrafo-cuidado h2 {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 990px) {
+  main section article {
+    display: flex;
+    justify-content: center;
+  }
+  main section article .imagen-cuidado {
+    width: 220px;
+    height: 280px;
+    margin-left: 5px;
+  }
+  main section article .imagen-cuidado img {
+    width: 200px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main section article .parrafo-cuidado {
+    font-size: 15px;
+    text-align: justify;
+    padding: 5px;
+  }
+}
+/*PAGE ABOUT*/
+main section div .video {
+  display: flex;
+  justify-content: center;
+}
+main section div .video video {
+  align-items: center;
+  width: 850px;
+  height: 450px;
+}
+main section div .about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section div .about-content .about-img {
+  padding: 10px;
+  position: relative;
+}
+main section div .about-content .about-img img {
+  width: 250px;
+  height: 350px;
+}
+main section div .about-content .about-img .contenido-hover {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background-color: rgba(224, 199, 209, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+main section div .about-content .about-img .contenido-hover h2 {
+  font-size: 30px;
+  color: rgb(54, 3, 28);
+}
+main section div .about-content .about-img .contenido-hover p {
+  font-size: 18px;
+  color: rgb(54, 3, 28);
+}
+main section div .about-content .about-img .contenido-hover:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+  main section div .video {
+    width: 380px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main section div .video video {
+    width: 550px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
