@@ -5,10 +5,12 @@ main {
             .video {
                 display: flex;
                 justify-content: center;
+                width: 4250px;
+                height: 350px;
                 video {
                     align-items: center;
-                    width: 850px;
-                    height: 450px;
+                    width: 4050px;
+                    height: 350px;
                 }
             }
             .about-content{

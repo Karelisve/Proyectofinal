@@ -16,7 +16,7 @@ main {
                 margin-top: 20px;
                 background-color: $color-bg-1;
                 img {
-                    width: 295px;
+                    width: 296px;
                     height: 350px;
                 }
                 h2 {
@@ -39,6 +39,7 @@ main {
                 &:hover {
                     transform: translateY(-10px);
                     box-shadow: map-get($shadow, hover-cards);
+                    transition: 0.5s;
                 }
             }
             .card-link {
