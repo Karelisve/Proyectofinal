@@ -385,7 +385,7 @@ main .container .row .contact-details .details-1 p {
   border-radius: 8px;
 }
 main .container .row .contact-details .iframe-map {
-  margin: 30px;
+  margin: 20px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -394,6 +394,10 @@ main .container .row .contact-details .iframe-map {
 @media screen and (max-width: 990px) {
   main .container .row .form {
     margin-bottom: 30px;
+  }
+  main .container .row .contact-details .iframe-map {
+    margin: 5px;
+    padding: 0px;
   }
 }
 /*PAGE CARE*/

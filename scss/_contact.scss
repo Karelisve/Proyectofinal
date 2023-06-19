@@ -64,7 +64,7 @@ main {
                     }
                 }
                 .iframe-map {
-                    margin: 30px;
+                    margin: 20px;
                     padding: 10px;
                     display: flex;
                     align-items: center;
@@ -80,6 +80,12 @@ main {
             .row {
                 .form{
                     margin-bottom: 30px;
+                }
+                .contact-details {
+                    .iframe-map{
+                        margin: 5px;
+                        padding: 0px;
+                    }
                 }
             }
         }
