@@ -6,7 +6,7 @@ main {
         background-size: cover;
         background-position: center;
         background-attachment: local;
-        padding: 80px 40px;
+        padding: 90px 40px;
         .row {
             div {
                 .titulo-banner {
@@ -103,10 +103,10 @@ main {
             .info {
                 div {
                     h2 {
-                        font-size: 15px;
+                        font-size: 16px;
                     }
                     p {
-                        font-size: 13px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -116,6 +116,6 @@ main {
 
 @media screen and (max-width: 1000px){
     .banner-link {
-        font-size: 0.8rem;
+        font-size: 15px;
     }
 }
