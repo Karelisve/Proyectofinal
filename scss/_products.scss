@@ -12,25 +12,10 @@ main {
                     font-family: $fuente-2;
                     margin-bottom: 30px;
                 }
-                p:last-child {
+                p {
                     font-size: 1rem;
                     padding: 0px;
                     color: $color-basic;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:990px) {
-    main {
-        .container{
-            .row {
-                .product-title {
-                    font-size: 15px;
-                    p:last-child {
-                        font-size: 14px;
-                    }
                 }
             }
         }
