@@ -539,5 +539,69 @@ main .container .row .about-content .about-img .contenido-hover:hover {
     justify-content: center;
   }
 }
+main section {
+  background-image: url(../img/fondo-page404.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(217, 179, 196);
+  padding: 400px 0px;
+}
+main section div h1 {
+  font-size: 90px;
+  letter-spacing: 10px;
+}
+main section div h2 {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 1370px) {
+  main section {
+    padding: 300px 0px;
+  }
+  main section div h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+  main section div h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 960px) {
+  main section {
+    padding: 250px 0px;
+    height: 700px;
+  }
+  main section div h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  main section div h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 590px) {
+  main section {
+    background-image: url(../img/fondo-page404movil.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  main section div h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    background-color: rgba(86, 37, 57, 0.649);
+    border-radius: 10px;
+  }
+  main section div h2 {
+    font-size: 30px;
+    background-color: rgba(86, 37, 57, 0.649);
+    border-radius: 10px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,90 @@
+main {
+    section {
+        background-image: url(../img/fondo-page404.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: local;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color-bg-hover-link;
+        padding: 400px 0px;
+        div {
+            h1 {
+                font-size: 90px;
+                letter-spacing: 10px;
+            }
+        }
+        div {
+            h2 {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    main {
+        section {
+            padding: 300px 0px;
+            div {
+                h1 {
+                    font-size: 60px;
+                    letter-spacing: 5px;
+                }
+            }
+            div {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main {
+        section {
+            padding: 250px 0px;
+            height: 700px;
+            div {
+                h1 {
+                    font-size: 40px;
+                    letter-spacing: 5px;
+                }
+            }
+            div {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    main {
+        section {
+            background-image: url(../img/fondo-page404movil.jpg);
+            background-size: cover;
+            background-position: center;
+            div {
+                h1 {
+                    font-size: 40px;
+                    letter-spacing: 5px;
+                    background-color: $color-page404-bg;
+                    border-radius: 10px;
+                }
+            }
+            div {
+                h2 {
+                    font-size: 30px;
+                    background-color: $color-page404-bg;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
