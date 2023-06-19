@@ -130,10 +130,10 @@ main section .page-title p {
 
 @media screen and (max-width: 990px) {
   main section .page-title {
-    font-size: 14px;
+    font-size: 15px;
   }
   main section .page-title p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 /*INDEX MAIN*/
@@ -428,7 +428,6 @@ main .container .row .parrafo-cuidado .ultimo-parrafo {
 
 @media screen and (max-width: 768px) {
   main .container .row .parrafo-cuidado {
-    font-size: 14px;
     text-align: justify;
     padding: 10px;
     width: 550px;
