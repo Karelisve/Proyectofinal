@@ -17,12 +17,15 @@ main {
             .parrafo-cuidado {
                 text-indent: 30px;
                 text-transform: initial;
-                margin-top: 20px;
+                margin: 10px;
                 padding: 20px 30px;
                 h2 {
                     text-indent: 0%;
                     text-align: center;
                     color: $color-titulo;
+                }
+                .ultimo-parrafo {
+                    margin-bottom: 100px;
                 }
             }
         }
@@ -57,6 +60,7 @@ main {
                     width: 220px;
                     height: 280px;
                     margin-left: 5px;
+                    margin: 20px;
                     img {
                         width: 200px;
                         height: 260px;

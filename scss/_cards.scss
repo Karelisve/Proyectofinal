@@ -5,9 +5,10 @@ main {
             display: flex;
             justify-content: center;
             .cards-title {
+            /*clase aplicada solo en el inicio*/
                 text-align: center;
                 font-size: 10px;
-                padding-top: 20px;
+                padding: 20px;
                 letter-spacing: 2px;
                 color: $color-titulo;
                 h2 {
@@ -17,7 +18,7 @@ main {
             .card {
                 background-color: $color-bg-1;
                 padding: 0;
-                margin: 20px;
+                margin: 10px 10px 30px;
                 img {
                     width: auto;
                     height: 340px;
