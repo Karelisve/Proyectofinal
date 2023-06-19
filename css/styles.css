@@ -218,11 +218,6 @@ main .container-fluid .info div p {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1000px) {
-  .banner-link {
-    font-size: 15px;
-  }
-}
 /*CARDS PRODUCTOS*/
 main .container .row {
   display: flex;
