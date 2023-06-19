@@ -1,7 +1,7 @@
 /*PAGE CARE*/
 main {
-    section {
-        article {
+    .container {
+        .row {
             padding: 10px;
             .imagen-cuidado {
                 margin-top: 50px;
@@ -31,12 +31,12 @@ main {
 
 @media screen and (max-width:768px) {
     main {
-        section {
-            article {
+        .container{
+            .row {
                 .parrafo-cuidado {
                     font-size: 14px;
                     text-align: justify;
-                    padding: 5px;
+                    padding: 10px;
                     width: 550px;
                     h2 {
                         font-size: 19px;
@@ -49,8 +49,8 @@ main {
 
 @media screen and (max-width:990px) {
     main {
-        section {
-            article {
+        .container {
+            .row {
                 display: flex;
                 justify-content: center;
                 .imagen-cuidado {

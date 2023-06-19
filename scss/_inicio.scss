@@ -7,7 +7,7 @@ main {
         background-position: center;
         background-attachment: local;
         padding: 80px 40px;
-        div {
+        .row {
             div {
                 .titulo-banner {
                     margin-bottom: 10px;
@@ -18,7 +18,7 @@ main {
                     font-family: $fuente-2;
                 }
             }
-            div {
+            .row {
                 .parrafo-banner {
                     font-size: 2rem;
                     text-align: center;
@@ -30,19 +30,21 @@ main {
                 }
             }
             .banner-1 {
-                a {
-                    text-decoration: none;
-                    margin-top: 10px;
-                    display: inline-block;
-                    border-radius: 6px;
-                    padding: 10px 10px;
-                    text-decoration: none;
-                    background-color: $color-bg-w;
-                    color: $color-subtitulos;
-                    &:hover {
-                        color: $color-hover-link;
-                        box-shadow: map-get($shadow, hover-sombra);
-                        background-color: $color-bg-hover-link;
+                .banner-link {
+                    a {
+                        text-decoration: none;
+                        margin-top: 10px;
+                        display: inline-block;
+                        border-radius: 6px;
+                        padding: 10px 10px;
+                        text-decoration: none;
+                        background-color: $color-bg-w;
+                        color: $color-subtitulos;
+                        &:hover {
+                            color: $color-hover-link;
+                            box-shadow: map-get($shadow, hover-sombra);
+                            background-color: $color-bg-hover-link;
+                        }
                     }
                 }
                 .banner-1:nth-child(2) {
@@ -51,46 +53,8 @@ main {
                 }
             }
         }
-    } 
-}
-
-
-@media screen and (max-width: 900px){
-    main {
-        .banner {
-            div {
-                div {
-                    .titulo-banner {
-                        font-size: 3rem;
-                        margin-left: 15px;
-                    }
-                }
-                div {
-                    .parrafo-banner {
-                        font-size: 1rem;
-                        text-align: center;
-                        margin-left: 15px;
-                    }
-                }
-                .banner-1 {
-                    width: 700px;
-                    height: 34px;
-                }
-            }
-        }
     }
-}
-
-@media screen and (max-width: 1000px){
-    .banner-link {
-        font-size: 0.8rem;
-    }
-}
-
-
-/*INDEX MAIN SECTION INFO */
-main{
-    section{
+    .container-fluid {
         .info {
             background-color: $color-bg-1;
             color: $color-titulo;
@@ -111,9 +75,31 @@ main{
     }
 }
 
+
 @media screen and (max-width: 900px){
     main {
-        section {
+        .banner {
+            .row {
+                div {
+                    .titulo-banner {
+                        font-size: 3rem;
+                        margin-left: 15px;
+                    }
+                }
+                .row {
+                    .parrafo-banner {
+                        font-size: 1rem;
+                        text-align: center;
+                        margin-left: 15px;
+                    }
+                }
+                .banner-1 {
+                    width: 700px;
+                    height: 34px;
+                }
+            }
+        }
+        .container-fluid {
             .info {
                 div {
                     h2 {
@@ -128,3 +114,8 @@ main{
     }
 }
 
+@media screen and (max-width: 1000px){
+    .banner-link {
+        font-size: 0.8rem;
+    }
+}

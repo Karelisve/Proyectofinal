@@ -1,7 +1,9 @@
 /*CARDS PRODUCTOS*/
 main {
-    section {
-        div {
+    .container {
+        .row {
+            display: flex;
+            justify-content: center;
             .cards-title {
                 text-align: center;
                 font-size: 10px;
@@ -12,28 +14,34 @@ main {
                     font-family: $fuente-2;
                 }
             }
-            .cards {
-                margin-top: 20px;
+            .card {
                 background-color: $color-bg-1;
+                padding: 0;
+                margin: 20px;
                 img {
-                    width: 296px;
-                    height: 350px;
+                    width: auto;
+                    height: 340px;
                 }
-                h2 {
-                    font-size: 18px;
-                    margin: 0px;
-                }
-                p {
-                    padding: 0px;
-                    margin: 0px;
-                }
-                button {
-                    @include boton(10px,2px 20px,6px);
-                    color: $color-basic;
-                    background-color: $color-bg-w;
-                    &:hover {
-                        background-color: $color-bg-hover-link;
-                        color: $color-hover-link;
+                .card-body {
+                    h3 {
+                        font-weight: bold;
+                        padding: 5px;
+                        font-size: 18px;
+                        margin: 0px;
+                        color: $color-titulo;
+                    }
+                    p {
+                        padding: 10px;
+                        margin: 0px;
+                    }
+                    button {
+                        @include boton(10px,2px 20px,6px);
+                        color: $color-basic;
+                        background-color: $color-bg-w;
+                        &:hover {
+                            background-color: $color-bg-hover-link;
+                            color: $color-hover-link;
+                        }
                     }
                 }
                 &:hover {
@@ -43,7 +51,7 @@ main {
                 }
             }
             .card-link {
-                margin: 30px 0px;
+                margin: 40px 0px 80px;
                 text-align: center;
                 a {
                     border-radius: 6px;
@@ -62,5 +70,3 @@ main {
         }
     }
 }
-
-
