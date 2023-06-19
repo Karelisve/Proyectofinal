@@ -130,10 +130,10 @@ main section .page-title p {
 
 @media screen and (max-width: 990px) {
   main section .page-title {
-    font-size: 15px;
+    font-size: 17px;
   }
   main section .page-title p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 /*INDEX MAIN*/
@@ -416,6 +416,7 @@ main .container .row .parrafo-cuidado {
   text-transform: initial;
   margin: 10px;
   padding: 20px 30px;
+  font-size: 18px;
 }
 main .container .row .parrafo-cuidado h2 {
   text-indent: 0%;
@@ -431,9 +432,10 @@ main .container .row .parrafo-cuidado .ultimo-parrafo {
     text-align: justify;
     padding: 10px;
     width: 550px;
+    font-size: 17px;
   }
   main .container .row .parrafo-cuidado h2 {
-    font-size: 19px;
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 990px) {
