@@ -456,13 +456,25 @@ main .container .row .parrafo-cuidado .ultimo-parrafo {
 main .container .row .video {
   display: flex;
   justify-content: center;
-  width: 4250px;
-  height: 350px;
+  width: 1000px;
+  height: 600px;
+  margin-bottom: 30px;
 }
-main .container .row .video video {
-  align-items: center;
-  width: 4050px;
-  height: 350px;
+main .container .row .parrafo-nosotros {
+  margin: 20px;
+  text-indent: 30px;
+  text-transform: initial;
+  margin: 10px;
+  font-size: 18px;
+}
+main .container .row .parrafo-nosotros span {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(43, 64, 51);
+  letter-spacing: 2px;
+  background-color: rgba(86, 148, 110, 0.2);
+  border-radius: 5px;
+  padding: 5px;
 }
 main .container .row .about-content {
   display: flex;
@@ -503,16 +515,28 @@ main .container .row .about-content .about-img .contenido-hover:hover {
   opacity: 1;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1070px) {
+  main .container .row .video {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  main .container .row .video {
+    width: 480px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 590px) {
   main .container .row .video {
     width: 380px;
     height: 200px;
     display: flex;
     justify-content: center;
-  }
-  main .container .row .video video {
-    width: 550px;
-    height: 200px;
   }
 }
 
